@@ -25,7 +25,7 @@ var commands = {
         response.innerHTML = ""
 
         setInterval(function(){
-            message = "Webhook sent to:  \n " + document.getElementById('prompt').value.slice(8,121) + " \nSuccesfully at: " + moment().format("LTS")
+            message = "Webhook sent to:  \n " + document.getElementById('prompt').value.slice(7,121) + " \nSuccesfully at: " + moment().format("LTS")
 
             if(nu < message.length){
                 nu++
@@ -33,7 +33,7 @@ var commands = {
             }
         } , 20)
 
-        fetch(document.getElementById('prompt').value.slice(7,this.length) , {
+        fetch(document.getElementById('prompt').value.slice(9,121) , {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
