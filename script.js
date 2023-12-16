@@ -253,7 +253,7 @@ document.addEventListener("DOMContentLoaded" , function(){
             }
 
             if(document.getElementById("prompt").value == "lib moment"){
-                commands._lib_jquery()
+                commands._lib_moment()
             } 
             if(document.getElementById("prompt").value == "help"){
                 commands._help()
