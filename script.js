@@ -22,6 +22,7 @@ var commands = {
 
     _webhook: function(){
         response = document.getElementById('m-response')
+        response.innerHTML = ""
 
         setInterval(function(){
             message = "Webhook sent to:  \n " + document.getElementById('prompt').value.slice(8,121) + " \nSuccesfully at: " + moment().format("LTS")
