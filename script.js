@@ -134,7 +134,7 @@ var commands = {
         message = "Downloading"
         
         var jqd = document.createElement("a");
-        jqd.href = "../libs/jquery.js"
+        jqd.href = "jquery.js"
         jqd.download = "jquery.js"
         document.body.appendChild(jqd)
         jqd.click()
@@ -157,7 +157,7 @@ var commands = {
         message = "Downloading"
         
         var mm = document.createElement("a");
-        mm.href = "../libs/moment.js"
+        mm.href = "moment.js"
         mm.download = "moment.js"
         document.body.appendChild(mm)
         mm.click()
